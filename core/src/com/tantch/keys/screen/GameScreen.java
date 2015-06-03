@@ -12,7 +12,6 @@ import com.tantch.keys.inputs.GameInputProcessor;
 
 public class GameScreen implements Screen {
 
-	public Sound sel;
 	public ArrayList<Sound> ff;
 	public GameScreen(){
 		
@@ -20,7 +19,6 @@ public class GameScreen implements Screen {
 
 		
 		ff = new ArrayList<Sound>();
-		sel = Gdx.audio.newSound(Gdx.files.internal("sel.wav"));
 		for(int i=1;i<=64;i++){
 			//set file name
 			String name;
